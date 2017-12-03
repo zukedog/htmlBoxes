@@ -1,7 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#main{
+body {
 	width: 100%;
-	background-color: gray;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	width: inherit;
+	height: inherit;
+	margin: 0;
+	padding: 0;
+	background-color: grey;
+	overflow: hidden;
 }
