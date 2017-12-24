@@ -15,4 +15,29 @@ body {
 	padding: 0;
 	background-color: grey;
 	overflow: hidden;
+	display: table;
+    table-layout: fixed;
+}
+
+.test{
+	/*display: table-cell;*/
+	
+	height: 100%;
+	width: 10px;
+	background-color: aqua;
+	display: table;
+    table-layout: fixed;
+}
+
+.vertical{
+	width: 10px;
+	height: 100%;
+	display: table-cell;
+	background-color: purple;
+}
+
+.container{
+	display: table-cell;
+	height: 100%;
+	width: 100%;
 }
