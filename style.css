@@ -1,18 +1,55 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.helper{
-	width: 100%;
-	height: 10px;
-	background-color: gray;
+html,body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
 }
 
-.tp{
-	height: calc(50% - 5px);
+.helper{
 	width: 100%;
+	height: 100%;
+	background-color: darkgray;
 }
+
+.helper[or="vertical"]{
+	width: 4px;
+	display: inline-block;
+}
+
+.helper[or="horizontal"]{
+	height: 4px;
+}
+
+.content{
+	background-color: purple;
+	width: 100%;
+	height: 100%;
+}
+
+.content[or="vertical"]{
+	width: calc(50% - 2px);
+	display: inline-block;
+}
+
+.content[or="horizontal"]{
+	height: calc(50% - 2px);
+}
+
 
 .win{
 	width: 100%;
-	background-color: aqua;
+}
+
+.tabBar{
+	width: 100%;
+	height: 20px;
+	background-color:grey;
+}
+
+.subTabBar{
+	width: 100%;
+	height: 30px;
+	background-color: dimgrey;
 }
