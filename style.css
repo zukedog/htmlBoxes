@@ -10,16 +10,18 @@ html,body{
 .helper{
 	width: 100%;
 	height: 100%;
-	background-color: darkgray;
+	background-color: black;
 }
 
 .helper[or="vertical"]{
 	width: 4px;
 	display: inline-block;
+	cursor: ew-resize;
 }
 
 .helper[or="horizontal"]{
 	height: 4px;
+	cursor: ns-resize;
 }
 
 .content{
@@ -37,19 +39,59 @@ html,body{
 	height: calc(50% - 2px);
 }
 
-
-.win{
+.contentBody{
 	width: 100%;
+	height: calc(100% - 20px);
+	overflow: hidden;
 }
 
 .tabBar{
 	width: 100%;
 	height: 20px;
 	background-color:grey;
+	overflow:visible;
+	display: table;
 }
 
 .subTabBar{
 	width: 100%;
 	height: 30px;
 	background-color: dimgrey;
+}
+
+.tab{
+	background-color: aqua;
+	height: 100%;
+	width: 100px;
+	display:table-cell;
+    box-shadow:inset 0px 0px 1px 1px #000;
+}
+
+.tabfill{
+	display: table-cell;
+	height: 100%;
+	width: 100%;
+}
+
+.thinRow{
+	height: 50px;
+	width: 100%;
+}
+
+.row{
+	height: calc(100% - 100px);
+	width: 100%;
+}
+
+.side{
+	height: 100%;
+	width: 50px;
+	background-color: blue;
+	display: inline-block;
+}
+
+.middle{
+	width: calc(100% - 100px);
+	height: 100%;
+	display: inline-block;
 }

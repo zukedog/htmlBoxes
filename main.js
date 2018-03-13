@@ -4,8 +4,15 @@ $(document).ready(function(){
 	$(".helper[or=\"vertical\"]").on("mousedown", initResizeV);//enable vertical Helper
 	$(".helper[or=\"horizontal\"]").on("mousedown", initResizeH);
 	
-	$(".content[split=\"false\"]").append('<div class="tabBar"></div><div class="subTabBar"></div>');
-
+	$(".content[split=\"false\"]").append('<div class="tabBar"></div>');//<div class="subTabBar"></div>
+	$(".content[split=\"false\"]").append('<div class="contentBody" ondrop="drop(event)" ondragenter="dragenter(event)" ondragleave="dragleave(event)" ondragover="hover(event)"></div>');
+	
+	$(".tabBar").append('<div class=tab draggable="true" ondragstart="drag(event)" dat=\"{}\">tab1</div>');
+	$(".tabBar").append('<div class=tab draggable="true" ondragstart="drag(event)">tab3</div>').attr("dat",'{"Test":"bob"}');
+	$(".tabBar").append('<div class=tabFill></div>');
+	//$(".tab").attr("dat",'{"Test":"bob"}');
+	$(".contentBody").html('<div class="thinRow"><div class="side"></div><div class="middle"></div><div class="side"></div></div><div class="row"><div class="side"></div><div class="middle"></div><div class="side"></div></div><div class="thinRow"><div class="side"></div><div class="middle"></div><div class="side"></div></div>');
+	
 
 });
 
