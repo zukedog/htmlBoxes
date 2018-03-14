@@ -28,9 +28,7 @@ function initResize(f){
 		//$(me).prev()[dir]((prevHeight+(e[screen]-st))+"px");
 		//$(me).next()[dir]((nextHeight-(e[screen]-st))+"px");
 		$(me).prev()[dir]((prevHeight+(e[screen]-st))/$(".content.main")[dir]()*100+"%");
-		$(me).next()[dir]((prevHeight-(e[screen]-st))/$(".content.main")[dir]()*100+"%");
-		
-		console.log((prevHeight-(e[screen]-st))/$(".content.main")[dir]()*100+"%");
+		$(me).next()[dir]((nextHeight-(e[screen]-st))/$(".content.main")[dir]()*100+"%");
 	});
 	
 	$(document).one("mouseup", function(){
