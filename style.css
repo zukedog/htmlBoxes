@@ -6,6 +6,16 @@ html,body{
 	padding: 0px;
 	height: 100%;
 }
+.header{
+	width: 100%;
+	height: 100px;
+	background-color:coral;
+	overflow: hidden;	
+}
+.content.main{
+	position: fixed;
+	height: calc(100% - 100px);
+}
 
 .helper{
 	width: 100%;

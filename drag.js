@@ -1,7 +1,7 @@
 // JavaScript Document
 function drag(ev) {
 	var me = this;
-	ev.dataTransfer.setData("text", ev.target);
+	ev.dataTransfer.setData("type", "tab");
 	console.log($(ev.target).attr("dat"));
 }
 
@@ -17,11 +17,15 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
 	console.log(ev.dataTransfer.mozSourceNode);
+	console.log(data=="");
+	console.log(ev.dataTransfer.types)
 	$(ev.target).append("<p>Tested</p>");
 	console.log(ev);
 	dragleave(ev);
 }
 
 function hover(ev){
-	ev.preventDefault();
+	if (ev.dataTransfer.getData("type")=="tab"){
+		ev.preventDefault();
+	}
 }
