@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	$(".win").height(window.innerHeight);//set window Height
-	
 	$(".helper[or=\"vertical\"]").on("mousedown", initResizeV);//enable vertical Helper
 	$(".helper[or=\"horizontal\"]").on("mousedown", initResizeH);
 	
@@ -12,8 +10,6 @@ $(document).ready(function(){
 	$(".tabBar").append('<div class=tabFill></div>');
 	//$(".tab").attr("dat",'{"Test":"bob"}');
 	$(".contentBody").html('<div class="thinRow"><div class="side"></div><div class="middle"></div><div class="side"></div></div><div class="row"><div class="side"></div><div class="middle"></div><div class="side"></div></div><div class="thinRow"><div class="side"></div><div class="middle"></div><div class="side"></div></div>');
-	
-
 });
 
 function initResizeH(f){
@@ -46,5 +42,4 @@ function initResizeV(f){
 		$(document).unbind();
 	});
 }
-
 
